@@ -1,5 +1,14 @@
 import './Information.css'
 import Slider from './components/Slider';
+import loginimg from '../assets/login.png';
+import dashboardimg from '../assets/dashboard.png';
+import dashboardmenuimg from '../assets/dashboardMenu.png';
+import dashboardnavigationimg from '../assets/dashboardNavigation.png';
+import kuva1 from '../assets/Kuva1.png';
+import kuva2 from '../assets/Kuva2.png';
+import kuva3 from '../assets/Kuva3.png';
+import kuva4 from '../assets/Kuva4.png';
+import kuva5 from '../assets/Kuva5.png';
 
 const Information = () => {
 
@@ -11,8 +20,7 @@ const Information = () => {
                 <span className='infLogoMenuText'>Tässä on muutamia ohjelmointiprojekteja joita olen tehnyt ja ylläpidän vieläkin.</span>
             </div>
             <div className='infMenuItem'>
-                {/* IMG SLIDER THING HERE */}
-                <Slider images={["/login.png", '/dashboard.png', '/dashboardMenu.png', '/dashboardNavigation.png']} />
+                <Slider images={[loginimg, dashboardimg, dashboardmenuimg, dashboardnavigationimg]} />
                 <span className='infMenuText' style={{ paddingLeft: '50px' }}>
                     <span className='infMenutitle'>Tilaustenohjausjärjestelmä</span><br />
                     Heimosen puutarha Oy huomasi vuonna 2019 ettei he voi enää hallita heidän tilauksiansa papereilla. Tästä lähti tarve heille sopivan ohjelman hankintaan.
@@ -27,7 +35,6 @@ const Information = () => {
                 </span>
             </div>
             <div className='infMenuItem'>
-                {/* IMG SLIDER THING HERE */}
                 <span className='infMenuText' style={{ paddingRight: '50px' }}>
                     <span className='infMenutitle'>Työnohjausjärjestelmä</span><br />
                     Siivoova Oy uusi yritys Kuopiosta alkoi kasvamaan ja huomasi tarvitsevansa parempaa tapaa töiden ohjaamiseen ja alkoi etsimään tekijää tai valmista sovellusta. Useimmilla valmiilla sovelluksilla
@@ -37,7 +44,7 @@ const Information = () => {
                     Sovellus on luotu käyttäen ReactJS, ExpressJS, NodeJS Ja MySQL. Sovelluksessa on roolipohjainen autentikaatio, jolla voi erotella eri käyttäjät toisistaan. Sovelluksessa on myös käytössä websocketit,
                     joidenka avulla käyttäjän näkevät aina reaaliaikaisen tiedon. Sovellus on vielä kehitysvaiheessa ja siihen on tarkoituksena lisätä paljon erilaisia ominaisuuksia kuten analytiikka ja paljon muuta.
                 </span>
-                <Slider images={["/Kuva1.png", '/Kuva2.png', '/Kuva3.png', '/Kuva4.png', 'Kuva5.png']} />
+                <Slider images={[kuva1, kuva2, kuva3, kuva4, kuva5]} />
             </div>
         </section>
     )
