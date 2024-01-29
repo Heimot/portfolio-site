@@ -24,7 +24,7 @@ const Slider: React.FC<Props> = ({ images }) => {
             <div className="slideDots">
                 {
                     images?.map((image, index) => (
-                        <div key={index} className={`slideDot${currentImage === index ? ' slideSelected' : ''}`} onClick={() => setCurrentImage(index)} />
+                        <div key={image} className={`slideDot${currentImage === index ? ' slideSelected' : ''}`} onClick={() => setCurrentImage(index)} />
                     ))
                 }
             </div>
