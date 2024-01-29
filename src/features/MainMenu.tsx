@@ -44,8 +44,8 @@ const MainMenu = () => {
                 <h1 className='mainTextTitle'>Ja ohjelmoin kiinnostavia sovelluksia.</h1>
                 <p className='mainTextInformation'>Hei! Tykkään luoda sovelluksia joista on hyötyä yrityksen tilauspuolella ja toiminnanohjauspuolella. Sovelluksieni tarkoituksena on toimia niin tietokoneilla kuin puhelimilla.</p>
                 <div>
-                    <button className='mainTextButton' onClick={() => {location.href = `${location.origin}/#contact` }}>Ota yhteyttä</button>
-                    <button className='mainTextButton' onClick={() => {location.href = `${location.origin}/#about-me` }}>Mitä olen tehnyt</button>
+                    <button className='mainTextButton' onClick={() => {location.href = `${location.origin, location.pathname}#contact` }}>Ota yhteyttä</button>
+                    <button className='mainTextButton' onClick={() => {location.href = `${location.origin, location.pathname}#about-me` }}>Mitä olen tehnyt</button>
                 </div>
             </div>
             <div className='mainImage'>
