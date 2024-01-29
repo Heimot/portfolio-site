@@ -1,0 +1,54 @@
+.infLogoMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infLogo {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #8a8a8a;
+    padding-bottom: 20px;
+}
+
+.infLogoMenuTitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.infLogoMenuText {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #8a8a8a;
+}
+
+.infMenuItem {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.infMenuText {
+    width: 100%;
+    color: #8a8a8a;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.infMenutitle {
+    color: white;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 770px) {
+    .infMenuItem {
+        flex-direction: column;
+    }
+    .infMenuText {
+        padding: 0px !important;
+    }
+}

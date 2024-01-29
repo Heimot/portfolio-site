@@ -1,0 +1,86 @@
+.mainmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mainText {
+    width: 50%;
+    padding-top: 250px;
+    padding-left: 50px;
+    text-align: left;
+    z-index: 10;
+}
+
+.mainTextTitle {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mainTextInformation {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #8a8a8a;
+}
+
+.mainTextButton {
+    width: 120px;
+    height: 40px;
+    border-color: #8a8a8a;
+    border-radius: 15px;
+    margin: 10px 20px 0px 0px;
+    color: white;
+}
+
+.mainTextButton:hover {
+    opacity: 50%;
+}
+
+.mainImage {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.mainImageBackground {
+    background: rgba(43, 43, 43, 0.6);
+    border-radius: 20px;
+    width: 400px;
+    height: 500px
+}
+
+.mainImageList {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    float: right;
+}
+
+.mainImageListItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainImageDot {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: 10%;
+}
+
+@media only screen and (max-width: 770px) {
+    .mainText, .mainImage {
+        width: 100%;
+    }
+
+    .mainImage {
+        position: absolute;
+        z-index: 0;
+    }
+}
