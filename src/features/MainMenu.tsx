@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import './MainMenu.css';
 
 interface StyleDiv {
@@ -12,6 +13,7 @@ interface DotDiv {
 }
 
 const MainMenu = () => {
+    const { t } = useTranslation();
     const dotsImage = (width: number, height: number) => {
         const divGenerated: StyleDiv[] = [];
         for (let i = 0; i < width; i++) {
@@ -40,12 +42,12 @@ const MainMenu = () => {
     return (
         <div className='mainmenu'>
             <div className='mainText'>
-                <h1 className='mainTextTitle'>Hei, Olen Joonas.</h1>
-                <h1 className='mainTextTitle'>Ja ohjelmoin kiinnostavia sovelluksia.</h1>
-                <p className='mainTextInformation'>Hei! Tykkään luoda sovelluksia joista on hyötyä yrityksen tilauspuolella ja toiminnanohjauspuolella. Sovelluksieni tarkoituksena on toimia niin tietokoneilla kuin puhelimilla.</p>
+                <h1 className='mainTextTitle'>{t('mainMenu.title')}</h1>
+                <h1 className='mainTextTitle'>{t('mainMenu.footer')}</h1>
+                <p className='mainTextInformation'>{t('mainMenu.subFooter')}</p>
                 <div>
-                    <button className='mainTextButton' onClick={() => {location.href = `${location.origin, location.pathname}#contact` }}>Ota yhteyttä</button>
-                    <button className='mainTextButton' onClick={() => {location.href = `${location.origin, location.pathname}#about-me` }}>Mitä olen tehnyt</button>
+                    <button className='mainTextButton' onClick={() => { location.href = `${location.origin, location.pathname}#contact` }}>{t('mainMenu.contactBtn')}</button>
+                    <button className='mainTextButton' onClick={() => { location.href = `${location.origin, location.pathname}#about-me` }}>{t('mainMenu.aboutMeBtn')}</button>
                 </div>
             </div>
             <div className='mainImage'>
